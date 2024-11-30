@@ -1,0 +1,13 @@
+.custom-grid {
+    grid-template-rows: auto 1fr;
+  }
+  
+  .container {
+    height: 100%; /* Ensure the container takes up the full height of its parent */
+  }
+  
+  svg {
+    width: 100%; /* Make the SVG element occupy the full width of its container */
+    height: 100%; /* Make the SVG element occupy the full height of its container */
+  }
+  

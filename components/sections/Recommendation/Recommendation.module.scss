@@ -1,0 +1,40 @@
+.root {
+  @apply mb-10 md:mb-28;
+}
+
+// .stackContainer {
+//   @apply bg-slate-900 dark:bg-[#0d1424] h-48 md:h-64 2xl:h-80 mt-10 flex items-center;
+// }
+
+.stack {
+  @apply px-6 transition duration-200 ease-linear transform hover:scale-125;
+}
+
+.testimonialWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.testimonialCardWrapper {
+  width: calc(33.33% - 16px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .testimonialCardWrapper {
+    width: 100%;
+  }
+}
+.stackContainer {
+  padding-left: 35px;
+  padding-right: 35px;
+  background: white;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
