@@ -6,7 +6,7 @@ import { Container, Text } from '@components/ui';
 import { BsGithub } from 'react-icons/bs';
 import { IoArrowRedoCircle } from 'react-icons/io5';
 import { Box, Button } from '@components/ui';
-
+import Image from 'next/image';
 const ProjectCard = ({
   index,
   name,
@@ -24,9 +24,10 @@ const ProjectCard = ({
         className="p-5 rounded-2xl sm:w-[310px] w-full shadow-lg flex-grow"
       >
         <div className="relative w-full h-[230px]">
-          <img
+          <Image
             src={image}
             alt={name}
+            layout={'fill'}
             className="w-full h-full object-cover rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">

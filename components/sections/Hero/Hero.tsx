@@ -77,7 +77,7 @@ export const Hero = () => {
               whileInView={{ y: 0, opacity: 1 }}
             >
               
-              I am a professional web developer with a great passion for programming. I have been working as a freelancer since 2020, delivering high-quality websites and web applications tailored to meet clients' specific needs.            </motion.span>
+              I am a professional web developer with a great passion for programming. I have been working as a freelancer since 2020, delivering high-quality websites and web applications tailored to meet clients specific needs.            </motion.span>
           </Text>
           <Box className='flex'>
             <motion.div

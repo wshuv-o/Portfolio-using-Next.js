@@ -5,7 +5,7 @@ import { FiMail } from 'react-icons/fi';
 import { BsPencil } from 'react-icons/bs';
 import { BiHomeAlt } from 'react-icons/bi';
 
-export const SideBar = ({ isHero = Boolean }) => {
+export const SideBar = ({ isHero}) => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -25,52 +25,52 @@ export const SideBar = ({ isHero = Boolean }) => {
       </h2>
       <ul className={!isHero ? 'items-center flex flex-col gap-3 w-full' : 'flex flex-col gap-3 w-full'}>
         <li>
-          <a href="/#top" onClick={() => scrollToSection('about')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+          <button onClick={() => scrollToSection('top')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
             <BiHomeAlt className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
             <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
               Home
             </span>
-          </a>
+          </button>
         </li>
         <li>
-          <a href="/#about" onClick={() => scrollToSection('about')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+          <button onClick={() => scrollToSection('about')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
             <BiCodeAlt className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
             <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
               My Skills
             </span>
-          </a>
+          </button>
         </li>
         <li>
-          <a href="/#portfoilo" onClick={() => scrollToSection('portfolio')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+          <button onClick={() => scrollToSection('portfolio')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
             <AiOutlineAppstoreAdd className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
             <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
               Portfolio
             </span>
-          </a>
+          </button>
         </li>
         <li>
-          <a href="/#testimonial" onClick={() => scrollToSection('testimonial')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+          <button onClick={() => scrollToSection('testimonial')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
             <FaUserCheck className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
             <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
               Reviews
             </span>
-          </a>
+          </button>
         </li>
         <li>
-          <a href="/#subscribe" onClick={() => scrollToSection('subscribe')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+          <button onClick={() => scrollToSection('subscribe')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
             <FiMail className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
             <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
               Contact
             </span>
-          </a>
+          </button>
         </li>
         <li>
-          <a href="/#latest" onClick={() => scrollToSection('latest')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+          <button onClick={() => scrollToSection('latest')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
             <BsPencil className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
             <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
               Blog
             </span>
-          </a>
+          </button>
         </li>
       </ul>
     </div>
