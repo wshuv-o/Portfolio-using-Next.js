@@ -1,73 +1,78 @@
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillTwitterCircle,
-  AiFillMail,
-  AiFillProfile,
-  AiFillBulb,
-} from 'react-icons/ai';
+import { BiCodeAlt } from 'react-icons/bi';
+import { AiOutlineAppstoreAdd } from 'react-icons/ai';
+import { FaUserCheck } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
+import { BsPencil } from 'react-icons/bs';
+import { BiHomeAlt } from 'react-icons/bi';
 
-import { Box, Link, Text } from '@components/ui';
-import s from './SideBar.module.scss';
-import { Logo } from '../Logo/Logo';
-import { BsGlobe, BsPeopleFill } from 'react-icons/bs';
-import { BiBrain, BiGlobe, BiSun } from 'react-icons/bi';
-import { RiGlobeFill, RiProfileFill } from 'react-icons/ri';
-import { FaBrain } from 'react-icons/fa';
-
-export const SideBar = () => {
-  const links = [
-    {
-      href: 'https://github.com/byteverseit',
-      Icon: BsPeopleFill,
-      title: 'Github',
-    },    
-    {
-      href: 'byteverseit@gmail.com',
-      Icon: AiFillMail,
-      title: 'Email',
-    },
-    {
-      href: 'https://twitter.com/byteverseit',
-      Icon: BsGlobe,
-      title: 'Twitter',
-    },
-    {
-      href: 'https://www.linkedin.com/in/byteverseit/',
-      Icon: RiProfileFill,
-      title: 'Linkedin',
-    },
-    {
-      href: 'https://www.linkedin.com/in/byteverseit/',
-      Icon: AiFillBulb,
-      title: 'Linkedin',
-    },
-  ];
+export const SideBar = ({ isHero = Boolean }) => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
 
   return (
-    <Box className={s.root}>
-      <Box className={s.main}>
-        <Logo />
-        <Box className={s.bar}>
-          <Text as='h1' casing='uppercase' className='font-heading mb-1, text-upper'>
-            HOME
-          </Text>
-        </Box>
-
-        <Box>
-          {links.map(({ href, Icon, title }) => (
-            <Link
-              key={href}
-              href={href}
-              target='_blank'
-              className='mb-6 block'
-            >
-              <Icon className={s.icon} />
-              <span className='sr-only'>Connect with Akash on {title}</span>
-            </Link>
-          ))}
-        </Box>
-      </Box>
-    </Box>
+    <div className="h-full flex bg-[rgb(29,29,29)] flex-col items-between justify-between p-4">
+      <h2 className={!isHero ? "origin-top-left rotate-90 transform translate-x-11 inline-block relative text-4xl font-black uppercase opacity-50 duration-300" : "inline-block relative text-4xl font-black uppercase opacity-80 duration-300"}>
+        <span className={!isHero ? 'rotate-180 inline-block transform' : 'inline-block transform'}>
+          Home
+        </span>
+      </h2>
+      <ul className={!isHero ? 'items-center flex flex-col gap-3 w-full' : 'flex flex-col gap-3 w-full'}>
+        <li>
+          <a href="/#top" onClick={() => scrollToSection('about')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+            <BiHomeAlt className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
+            <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/#about" onClick={() => scrollToSection('about')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+            <BiCodeAlt className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
+            <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
+              My Skills
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/#portfoilo" onClick={() => scrollToSection('portfolio')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+            <AiOutlineAppstoreAdd className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
+            <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
+              Portfolio
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/#testimonial" onClick={() => scrollToSection('testimonial')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+            <FaUserCheck className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
+            <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
+              Reviews
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/#subscribe" onClick={() => scrollToSection('subscribe')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+            <FiMail className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
+            <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
+              Contact
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/#latest" onClick={() => scrollToSection('latest')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
+            <BsPencil className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
+            <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
+              Blog
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 };

@@ -77,22 +77,7 @@ export const Footer = () => {
         </Box>
 
         <Box className='col-span-3 max-w-lg  bg-[rgb(250,250,250)] border-green-600 border-2 shadow-xl px-10 py-10 rounded-2xl px-30 py-30'>
-          <Text
-            as='h4'
-            casing='uppercase'
-            fontWeight='medium'
-            fontSize='xl'
-            className='font-heading mb-4'
-          >
-            <motion.span
-              className='block'
-              initial={{ opacity: 0 }}
-              transition={{ duration: 0.6 }}
-              whileInView={{ opacity: 1 }}
-            > <br />
-              Mohammed Akash
-            </motion.span>
-          </Text>
+          
           <Text className='mb-6'>
             <motion.span
               className='block'
@@ -101,7 +86,6 @@ export const Footer = () => {
               whileInView={{ opacity: 1 }}
             >
               
-              <br />
             </motion.span>
           </Text>
           <Subscribe />

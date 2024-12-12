@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import {
   About,
-  GetInTouch,
   Hero,
   LatestBlogs,
-  TechStack,
+  Recommendation,
+  Works,
 } from '@components/sections';
 import { Footer, Nav, Page } from '@components/common';
 import { Box } from '@components/ui';
@@ -28,7 +28,7 @@ export default function Home({ articles }) {
       description='I am a professional web developer with a great passion for programming. I have been working as a freelancer since 2020.'
       url='/'
       keywords='Akash'
-      image='/images/jose.png'
+      image='/images/akash.png'
       canonicalURL='#'
     >
       <Nav className='absolute py-3 md:py-5' />
@@ -36,8 +36,8 @@ export default function Home({ articles }) {
       <Hero />
       <About />
       <LatestBlogs articles={articles} />
-      <GetInTouch />
-      <TechStack />
+      <Works />
+      <Recommendation/>
       <Footer />
     </Page>
   );

@@ -64,7 +64,7 @@ class MyDocument extends Document {
             color='#f43f5e'
           />
           <meta name='msapplication-TileColor' content='#f43f5e' />
-          <meta name='theme-color' content='#ffffff' />
+          <meta name='theme-color' content='#777777' />
         </Head>
         <body style={{ fontSize: 20 }}>
           <Main />

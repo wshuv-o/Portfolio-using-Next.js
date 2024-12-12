@@ -48,7 +48,7 @@ const Form = ({ status, message, onValidated }) => {
         {status === 'success' ? (
           <span className='text-base font-bold text-green-500'>{message}</span>
         ) : (
-          'Subscribe to my newsletter to stay up to date with articles, tips and much more!'
+          'Contact me if you have any project ideas'
         )}
       </Text>
       <Input
@@ -83,7 +83,7 @@ const Form = ({ status, message, onValidated }) => {
         disabled={status === 'sending' || status === 'success'}
         className='font-heading uppercase ring-offset-2 rounded-full'
       >
-        {status === 'sending' ? 'Joining newsletter...' : 'Join the newsletter'}
+        {status === 'sending' ? 'Subscribing...' : 'Subscribe'}
       </Button>
       <Text className='mt-3' fontSize='sm'>
         

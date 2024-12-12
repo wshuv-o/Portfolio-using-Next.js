@@ -12,21 +12,26 @@ export const Menu = ({ onClose }) => {
       href: '/',
     },
     {
-      label: 'Blog',
-      href: '/#blog',
-    },
-    {
-      label: 'About',
+      label: 'Skills',
       href: '/#about',
     },
     {
-      label: 'Subscribe',
-      href: '/#subscribe',
+      label: 'Blog',
+      href: '/blog',
     },
     {
-      label: 'My Resume',
+      label: 'Portfoilo',
+      href: '/#portfoilo',
+    },
+    {
+      label: 'Testimonials',
       href: '/#testimonial',
     },
+    {
+      label: 'Contacts',
+      href: '/#subscribe',
+    },
+    
   ];
 
   const getClasses = (path: string) => {

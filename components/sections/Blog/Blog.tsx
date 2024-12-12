@@ -1,13 +1,13 @@
 import { Box, Container, Text } from '@components/ui';
 import { Card } from '@components/blog';
 import { Footer } from '@components/common';
-import { GetInTouch } from '..';
+import { Works } from '..';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const Blog = ({ articles }) => {
   return (
-    <Box>
-      <Container className='mt-20 mb-6 md:mt-24'>
+    <Box >
+      <Container  className='mt-20 mb-6 md:mt-24' >
         <Text as='h2' fontSize='4xl'>
           <motion.span
             className='block'
@@ -68,7 +68,6 @@ export const Blog = ({ articles }) => {
           )}
         </Container>
       </AnimatePresence>
-      <GetInTouch />
       <Footer />
     </Box>
   );

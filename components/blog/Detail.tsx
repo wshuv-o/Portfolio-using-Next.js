@@ -61,7 +61,7 @@ const Header = ({ slug, title, readTime, publishedAt }) => {
         href='/blog'
         className='font-heading relative -left-[7px] mt-4 mb-5 flex items-center text-xs uppercase hover:text-green-500 md:hidden'
       >
-        <MdOutlineKeyboardArrowLeft className='mr-1 h-4 w-auto' /> back to blog
+        <MdOutlineKeyboardArrowLeft className='mr-1 h-4 w-auto' /> Back to blog
       </Link>
       <Box className='flex items-center justify-between'>
         <Text as='span' fontSize='sm' className='mb-2 block opacity-75 md:pt-5'>

@@ -6,7 +6,7 @@ import Testimonials from 'components/common/Testimonial/index';
 import TestimonialCard from 'components/common/Testimonial/TestimonialCard';
 
 
-export const Recommendation = () => {
+export const AllRecommendation = () => {
   return (
     <Container id='testimonial' full className={s.root}>
       <Container className='bg-white'>
@@ -53,17 +53,6 @@ export const Recommendation = () => {
           ))}
         </div>
       </Box>
-
-      <Box className='bg-white mt-5 text-center'>
-              <Button
-                variant='secondary'
-                size='lg'
-                href='/testimonials'
-                className='font-heading mr-3 text-sm uppercase rounded-full'
-              >
-                All Feedbacks
-              </Button>
-        </Box>
     </Container>
   );
 };

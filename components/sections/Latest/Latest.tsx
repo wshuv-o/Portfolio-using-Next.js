@@ -25,11 +25,6 @@ export const LatestBlogs = ({ articles }) => {
               My Blogs
             </motion.span>
           </Text>
-          <Link
-            href='/blog'
-            className='font-heading hidden text-sm font-medium uppercase hover:text-green-500 md:block'
-          >
-          </Link>
         </Box>
         <Text className='md:'>
           <motion.span

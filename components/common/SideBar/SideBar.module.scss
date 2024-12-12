@@ -27,3 +27,19 @@
 .icon:hover {
   color: rgb(101, 241, 101); 
 }
+
+.linkWrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 999;
+}
+
+.globeOverlayContent {
+  height: 100%;
+}

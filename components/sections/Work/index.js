@@ -33,6 +33,30 @@ const projects = [
     source_code_link: "https://github.com/wshuv-o/Railway-Ticketing-System",
   },
   {
+    name: "Creative money",  
+    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    tags: [
+      {
+        name: "Java Swing",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "/images/web2.png",
+    source_code_link: "https://github.com/wshuv-o/Railway-Ticketing-System",
+  },
+  {
+    name: "asdfasdfasdf",  
+    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    tags: [
+      {
+        name: "Java Swing",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "/images/web2.png",
+    source_code_link: "https://github.com/wshuv-o/Railway-Ticketing-System",
+  },
+  {
     name: "Project Name",
     description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     tags: [

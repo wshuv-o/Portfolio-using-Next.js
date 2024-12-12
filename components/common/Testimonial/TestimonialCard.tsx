@@ -17,10 +17,9 @@ const TestimonialCard = ({ testimonial, name, country, imageSrc }) => {
   };
 
   return (
-    <Box onMouseMove={handleMouseMove} className='rounded-lg shadow-md p-4' style={gradientStyle}>
+    <Box  onMouseMove={handleMouseMove} className='rounded-lg shadow-md p-4' style={gradientStyle}>
       <div className='flex items-start mb-4'>
         <div className='w-32 rounded-full overflow-hidden'>
-          {/* Adjust the image width and height to match the container size */}
           <Image src={imageSrc} alt={name} width={16} height={16} className='object-cover' />
         </div>
         <div className='ml-4'>

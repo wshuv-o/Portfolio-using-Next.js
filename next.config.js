@@ -17,7 +17,7 @@ module.exports = withPWA({
     skipWaiting: true,
   },
   images: {
-    domains: ['res.cloudinary.com'],
+    domains: ['res.cloudinary.com','media.dev.to','media2.dev.to'],
   },
   webpack: (config) => {
     // Find the base rule that contains nested rules (which contains css-loader)

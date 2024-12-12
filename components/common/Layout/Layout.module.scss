@@ -1,3 +1,23 @@
 .root {
   @apply grid grid-cols-1 md:grid-cols-[80px_auto] 2xl:grid-cols-[100px_auto];
 }
+/* Layout.css */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hide-sidebar {
+  display: none;
+}
