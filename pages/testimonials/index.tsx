@@ -6,7 +6,7 @@ import { AllRecommendation } from '@components/sections/Recommendation/AllRecomm
 export default function Home({ articles }) {
   return (
     <Page
-      title='Mohammed Akash | Blog'
+      title='Wahid Shuvo | Blog'
       description="Akash's thoughts on Web Development, DevOps, and Tech in general."
       url=''
       keywords=''

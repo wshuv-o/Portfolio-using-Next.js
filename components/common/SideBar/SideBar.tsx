@@ -17,7 +17,7 @@ export const SideBar = ({ isHero}) => {
   };
 
   return (
-    <div className="h-full flex bg-[rgb(29,29,29)] flex-col items-between justify-between p-4">
+    <div className="h-full flex bg-[rgb(31,38,92)] flex-col items-between justify-between p-4">
       <h2 className={!isHero ? "origin-top-left rotate-90 transform translate-x-11 inline-block relative text-4xl font-black uppercase opacity-50 duration-300" : "inline-block relative text-4xl font-black uppercase opacity-80 duration-300"}>
         <span className={!isHero ? 'rotate-180 inline-block transform' : 'inline-block transform'}>
           Home
@@ -48,14 +48,7 @@ export const SideBar = ({ isHero}) => {
             </span>
           </button>
         </li>
-        <li>
-          <button onClick={() => scrollToSection('testimonial')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
-            <FaUserCheck className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />
-            <span className={!isHero ? 'hidden' : '' + ' inline-block text-lg whitespace-nowrap'}>
-              Reviews
-            </span>
-          </button>
-        </li>
+
         <li>
           <button onClick={() => scrollToSection('subscribe')} className="flex items-center gap-3 duration-300 opacity-80 hover:opacity-100">
             <FiMail className='h-9 w-9 border border-gray-600 p-1.5 rounded-md' />

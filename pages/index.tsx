@@ -4,7 +4,7 @@ import {
   About,
   Hero,
   LatestBlogs,
-  Recommendation,
+  
   Works,
 } from '@components/sections';
 import { Footer, Nav, Page } from '@components/common';
@@ -24,11 +24,11 @@ export default function Home({ articles }) {
 
   return (
     <Page
-      title='Mohammed Akash | Web Developer'
-      description='I am a professional web developer with a great passion for programming. I have been working as a freelancer since 2020.'
+      title='Wahid Shuvo | Web Developer'
+      description='I am a professional web developer with a great passion for programming. I am graduating and I worked on projects .'
       url='/'
-      keywords='Akash'
-      image='/images/akash.png'
+      keywords='Shuvo'
+      image='/images/shuvo.png'
       canonicalURL='#'
     >
       <Nav className='absolute py-3 md:py-5' />
@@ -37,7 +37,6 @@ export default function Home({ articles }) {
       <About />
       <LatestBlogs articles={articles} />
       <Works />
-      <Recommendation/>
       <Footer />
     </Page>
   );

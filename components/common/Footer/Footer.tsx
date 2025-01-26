@@ -34,45 +34,40 @@ export const Footer = () => {
             whileInView={{ opacity: 1 }}
           >
             <Link
-            href='mailto:mohammed@akash.com'
-            className='mb-3 block text-base font-medium items-center hover:text-green-500'
+            href='mailto:wshuvo360@gmail.com'
+            className='mb-3 block text-base font-medium items-center hover:text-blue-500'
           >
             <div className="flex items-center">
               <div className="mr-2">
                 <AiOutlineMail size={20} />
               </div>
-              mohammed@akash.com
+              wshuvo360@gmail.com
             </div>
             </Link>
             <Link
-              href='fiverr.com/mdakashmony'
-              className='mb-3 block text-base font-medium hover:text-green-500 '
-            ><div className="flex items-center">
-            <div className="mr-2"><AiFillWeiboCircle size={20}/></div>
-              fiverr.com/mdakashmony</div>
-            </Link>
-            <Link
               href='/'
-              className='mb-3 block text-base font-medium hover:text-green-500'
+              className='mb-3 block text-base font-medium hover:text-blue-500'
             >
               <div className="flex items-center">
               <div className="mr-2">
                 <BiGlobe size={20} />
               </div>
-              UpWork.com
+              github.com/wshuv-o
             </div>
             </Link>
             <Link
               href='/'
-              className='mb-3 block text-base font-medium hover:text-green-500'
+              className='mb-3 block text-base font-medium hover:text-blue-500'
             >
               <div className="flex items-center">
               <div className="mr-2">
-                <FacebookIcon size={20} />
+                <BiGlobe size={20} />
               </div>
-              Facebook
+              linkedin.com/in/wshuvo
             </div>
             </Link>
+
+
           </motion.span>
         </Box>
 

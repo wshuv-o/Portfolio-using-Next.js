@@ -6,112 +6,76 @@ import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
 export const About = () => {
-  /*const treeRef = useRef(null);
-
-  useEffect(() => {
-    const svg = d3.select(treeRef.current);
-
-    const data = [1, 2, 3, 4, 5, 6];
-    var curveHeight = 100;
-    const hei=[50,200,480,600,800,1000]
-
-    const lines = svg
-      .selectAll('.tree-line')
-      .data(data)
-      .enter()
-      .append('path')
-      .attr('class', 'tree-line')
-      .attr('d', (d, i) => {
-        const startX = -0;
-        const startY = 420;
-        const controlX = 100; // Adjust the control point based on your preference
-        const controlY = hei[i];
-        const endX = 300;
-        const endY = 60+curveHeight * i;
-
-        return `M ${startX} ${startY} Q ${controlX} ${controlY} ${endX} ${endY}`;
-      })
-      .style('fill', 'none')
-      .style('stroke', 'green')
-      .style('stroke-width', '1px');
-
-    return () => {
-      lines.remove();
-    };
-  }, []);*/
-
   return (
-    <Container id='about' className='mb-20 grid gap-10 md:mb-40 md:grid-cols-2 custom-grid'>
+    <Container
+      id="about"
+      className="mb-20 grid gap-10 md:mb-40 md:grid-cols-2 custom-grid"
+    >
+      {/* Text Section */}
       <motion.div
-        initial={{ x: -10 }}
+        initial={{ x: 0 }}
         transition={{ duration: 0.8 }}
         whileInView={{ x: 0 }}
+        className="space-y-5 flex flex-col justify-between min-h-[400px]"
       >
-        <Text as='h2' className='mb-5' fontSize='5xl'>
+        <Text as="h2" className="mb-5 text-6xl font-bold">
           My Skills
         </Text>
-        <Text className='gap-5 md:columns-1 2xl:gap-10'>
-          After leaving my regular job, I have been working as a freelance developer since 2020. I have received 40+ Fiverr reviews, all with a 5-star rating.
-          <br />
-          <br />
-          Check out my{' '}
-          <Link
-            className='font-medium text-green-500'
-            target='_blank'
-            href='https://www.fiverr.com/akashmony01'
-          >
-            Fiverr profile.
-          </Link>
-          <br />
-          <br />
-          Over the course of my professional journey, I have acquired a wealth of expertise in frontend development, showcasing remarkable skills in this domain. This experience has allowed me to flourish as a developer, honing my abilities to create exceptional web experiences. With a strong focus on frontend technologies, I am well-versed in crafting visually appealing and user-friendly interfaces.
+        <Text className="text-lg text-gray-700 leading-relaxed md:columns-1">
+          I am a passionate full-stack developer with extensive experience in building and deploying high-quality web applications. I have successfully managed multiple projects while pursuing my BSc in CSE.
+          <br /><br />
+          Throughout my journey, I have gained extensive expertise in frontend development, consistently delivering high-quality and user-friendly web experiences. Balancing projects alongside my BSc studies, I have developed a strong ability to craft visually appealing interfaces with a focus on usability and modern design principles.
         </Text>
       </motion.div>
 
+      {/* Skills Section */}
       <motion.div
-        initial={{ translateX: 30 }}
+        initial={{ translateX: 10 }}
         transition={{ duration: 1 }}
         whileInView={{ translateX: 0 }}
-        className='relative h-auto md:h-[fit-content] md:pt-10 2xl:h-[420px] flex justify-center items-center bg-[rgb(240,240,240)] rounded-lg px-8 py-10 container'
+        className="relative h-auto md:h-[fit-content] md:pt-10 2xl:h-[500px] flex justify-center items-center bg-[rgb(240,240,240)] rounded-lg px-6 py-8"
       >
-        {/*<svg ref={treeRef} className='w-full h-full' />*/}
+        <Box className="space-y-3 w-full max-w-[400px] md:max-w-none">
+          <Box className="bg-green-500 bg-opacity-20 rounded-md p-3 hover:bg-opacity-90 transition-all duration-200">
+            <Text as="span" className="font-bold text-gray-800">
+              Frontend:
+            </Text>{' '}
+            HTML, CSS3, JavaScript, SCSS, SASS, Bootstrap, Tailwind CSS, Next.js
+          </Box>
 
-        <Box className='space-y-2 w-full max-w-[400px] md:max-w-none'>
-        <Box className='bg-green-500 bg-opacity-20 rounded-md p-2 hover:bg-opacity-90'>
-        <Text as='span' className='font-bold text-black-500'>
-          Frontend:
-        </Text>{' '}
-        HTML, CSS3, JavaScript, SCSS, SASS, Bootstrap, Tailwind
-      </Box>
-          <Box className='bg-green-500 bg-opacity-20 rounded-md p-2 hover:bg-opacity-90'>
-            <Text as='span' className='font-bold text-black-500 hover:text-white-500'>
+          <Box className="bg-green-500 bg-opacity-20 rounded-md p-3 hover:bg-opacity-90 transition-all duration-200">
+            <Text as="span" className="font-bold text-gray-800">
               Backend:
             </Text>{' '}
-            PHP, mysql, ajax (intermediate)
+            PHP (Laravel), PostgreSQL, MySQL, AJAX (Intermediate), NestJS
           </Box>
-          <Box className='bg-green-500 bg-opacity-20 rounded-md p-2 hover:bg-opacity-90'>
-            <Text as='span' className='font-bold text-black-500 hover:text-white-500'>
-              Static site generators:
+
+          <Box className="bg-green-500 bg-opacity-20 rounded-md p-3 hover:bg-opacity-90 transition-all duration-200">
+            <Text as="span" className="font-bold text-gray-800">
+              Frameworks:
             </Text>{' '}
-            astro, gridsome, hugo, eleventy, next.js, jeykyll
+            Node.js, jQuery, Vue.js, Django
           </Box>
-          <Box className='bg-green-500 bg-opacity-20 rounded-md p-2 hover:bg-opacity-90'>
-            <Text as='span' className='font-bold text-black-500 hover:text-white-500'>
-              Framework:
-            </Text>{' '}
-            node js, jquery, vue js, django
-          </Box>
-          <Box className='bg-green-500 bg-opacity-20 rounded-md p-2 hover:bg-opacity-90'>
-            <Text as='span' className='font-bold text-black-500 hover:text-white-500'>
+
+          <Box className="bg-green-500 bg-opacity-20 rounded-md p-3 hover:bg-opacity-90 transition-all duration-200">
+            <Text as="span" className="font-bold text-gray-800">
               Applications:
             </Text>{' '}
-            figma, sketch, adobe xd, photoshop
+            Figma, Sketch, Adobe XD, Photoshop
           </Box>
-          <Box className='bg-green-500 bg-opacity-20 rounded-md p-2 hover:bg-opacity-90'>
-            <Text as='span' className='font-bold text-black-500 hover:text-white-500'>
+
+          <Box className="bg-green-500 bg-opacity-20 rounded-md p-3 hover:bg-opacity-90 transition-all duration-200">
+            <Text as="span" className="font-bold text-gray-800">
+              Data Science & Tools:
+            </Text>{' '}
+            Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn
+          </Box>
+
+          <Box className="bg-green-500 bg-opacity-20 rounded-md p-3 hover:bg-opacity-90 transition-all duration-200">
+            <Text as="span" className="font-bold text-gray-800">
               Languages:
             </Text>{' '}
-            c, c++, python (basic)
+            C, C++, Python, Java, C#, R, Assembly
           </Box>
         </Box>
       </motion.div>

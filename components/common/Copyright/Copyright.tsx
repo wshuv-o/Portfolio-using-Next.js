@@ -11,7 +11,7 @@ export const Copyright = () => (
         href='/'
         className='font-medium text-green-500 hover:text-green-600 dark:text-green-500'
       >
-        Mohammed Akash
+        Wahid Shuvo
       </Link>
       .
     </Text>

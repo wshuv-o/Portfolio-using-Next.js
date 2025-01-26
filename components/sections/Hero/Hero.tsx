@@ -14,7 +14,7 @@ export const Hero = () => {
         className='relative mt-[64px] h-[70vh] md:hidden'
       >
         <Image
-          src='/images/akash.png'
+          src='/images/shuvo.png'
           layout='fill'
           objectFit='cover'
           objectPosition='center left'
@@ -22,7 +22,7 @@ export const Hero = () => {
           quality={100}
           blurDataURL='/images/jose-placeholder.png'
           placeholder='blur'
-          alt='Mohammed Akash'
+          alt='Wahid Shuvo'
         />
       </motion.div>
 
@@ -33,14 +33,14 @@ export const Hero = () => {
         className='relative left-4 order-1 mt-0 hidden h-full max-w-2xl justify-end pt-3 md:flex'
       >
         <Image
-          src='/images/akash.png'
+          src='/images/shuvo.png'
           layout='fill'
           objectFit='contain'
           priority
           quality={100}
           blurDataURL='/images/jose-placeholder.png'
           placeholder='blur'
-          alt='Mohammed Akash'
+          alt='Wahid Shuvo'
         />
       </motion.div>
 
@@ -65,7 +65,7 @@ export const Hero = () => {
               transition={{ duration: 0.8 }}
               whileInView={{ y: 0, opacity: 1 }}
             >
-              MOHAMMED AKASH
+              Wahid Shuvo
             </motion.span>
           </Text>
 
@@ -75,9 +75,7 @@ export const Hero = () => {
               initial={{ y: 20, opacity: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
               whileInView={{ y: 0, opacity: 1 }}
-            >
-              
-              I am a professional web developer with a great passion for programming. I have been working as a freelancer since 2020, delivering high-quality websites and web applications tailored to meet clients specific needs.            </motion.span>
+            >I am a passionate full-stack developer with experience in building and deploying web applications. Currently completing my BSc in CSE, I specialize in frontend and backend development, real-time data processing, and automation. Proficient in frameworks like Next.js, Laravel, and NestJS, I deliver scalable and impactful solutions.     </motion.span>
           </Text>
           <Box className='flex'>
             <motion.div
@@ -94,20 +92,7 @@ export const Hero = () => {
                 Read my blog
               </Button>
             </motion.div>
-            <motion.div
-              initial={{ x: 10 }}
-              transition={{ duration: 1, delay: 0.4 }}
-              whileInView={{ x: 0 }}
-            >
-              <Button
-                variant='secondary'
-                size='lg'
-                href='/blog'
-                className='font-heading mr-3 text-sm uppercase rounded-full'
-              >
-                Hire me
-              </Button>
-            </motion.div>
+
           </Box>
         </Box>
         <motion.div

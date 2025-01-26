@@ -23,10 +23,7 @@ export const Menu = ({ onClose }) => {
       label: 'Portfoilo',
       href: '/#portfoilo',
     },
-    {
-      label: 'Testimonials',
-      href: '/#testimonial',
-    },
+
     {
       label: 'Contacts',
       href: '/#subscribe',
